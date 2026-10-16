@@ -1,15 +1,14 @@
-package app.src.main.java.uts;
+package uts;
 
-import quiz2.view.ProductView;
+import java.util.List;
+
+import uts.view.MainView;;
 
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
-
     public static void main(String[] args) {
-        ProductView view = new ProductView();
-        view.start();
+        MainView view = new MainView();
+        
+        view.printData();
     }
 }

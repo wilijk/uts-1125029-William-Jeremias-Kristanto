@@ -1,4 +1,4 @@
-package quiz2.util;
+package uts.util;
 
 import java.util.Scanner;
  

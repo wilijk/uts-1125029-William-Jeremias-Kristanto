@@ -1,4 +1,4 @@
-package app.src.main.java.uts.model;
+package uts.model;
 
 import java.util.List;
 
@@ -14,15 +14,21 @@ public class Kopi extends MenuItem implements Customizable {
 
     @Override
     public void customize(List<Integer> customizations) {
-        if (customizations.size() >= 5) {
-            this.rum = customizations[0] ;
+        if (customizations.size() >= 3) {
+            this.rum = customizations.get(0).toString();
+            this.es = customizations.get(1).toString();
+            this.gula = customizations.get(2).toString();
+            this.karamel = customizations.get(3).toString();
         }
     }
 
     @Override
     public void customize(int[] customizations) {
-        if (customizations.length >= 5) {
-
+        if (customizations.length >= 3) {
+            setHargaBase(customizations[0]);
+            setHargaBase(customizations[1]);
+            setHargaBase(customizations[2]);
+            setHargaBase(customizations[3]);
         }
     }
 
@@ -42,7 +48,6 @@ public class Kopi extends MenuItem implements Customizable {
 
     @Override
     public double hitungHargaTotal(int jumlah, UkuranKategori ukuran) {
-
         if (ukuran.toString().equalsIgnoreCase("SMALL")) {
             return jumlah * getHargaBase();
         } else if (ukuran.toString().equalsIgnoreCase("MEDIUM")) {

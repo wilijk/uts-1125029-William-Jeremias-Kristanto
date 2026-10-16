@@ -1,4 +1,4 @@
-package app.src.main.java.uts.model;
+package uts.model;
 
 public abstract class MenuItem {
     String id;
@@ -45,9 +45,13 @@ public abstract class MenuItem {
         this.stok = stok;
     }
 
-    abstract double hitungHargaTotal();
+    public abstract double hitungHargaTotal(int jumlah);
     
-    abstract String getOrderDetail();
+    public abstract double hitungHargaTotal(int jumlah, String kodePromo);
+    
+    public abstract double hitungHargaTotal(int jumlah, UkuranKategori ukuran);
+    
+    public abstract String getOrderDetail();
     
 }
 
