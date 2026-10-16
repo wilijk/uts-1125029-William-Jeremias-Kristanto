@@ -1,4 +1,4 @@
-package quiz2;
+package app.src.main.java.uts;
 
 import quiz2.view.ProductView;
 

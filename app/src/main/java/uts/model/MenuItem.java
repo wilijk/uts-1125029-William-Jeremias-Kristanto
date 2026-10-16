@@ -1,3 +1,5 @@
+package app.src.main.java.uts.model;
+
 public abstract class MenuItem {
     String id;
     String nama;
@@ -31,7 +33,7 @@ public abstract class MenuItem {
         return hargaBase;
     }
     
-    public void setHargaBase(int hargaBase) {
+    public void setHargaBase(double hargaBase) {
         this.hargaBase = hargaBase;
     }
 
