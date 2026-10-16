@@ -1,3 +1,4 @@
+package app.src.main.java.uts.model;
 import java.util.List;
 
 public interface Customizable {
